@@ -90,6 +90,16 @@
     transition: all 0.6s cubic-bezier(0.31, 0.85, 0.11, 0.99);
 }
 
+.no-select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .burger-icon-inner,
 .burger-icon::before,
 .burger-icon::after {
