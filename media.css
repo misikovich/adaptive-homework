@@ -6,9 +6,19 @@
 
     .nav {
         display: none;
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .nav-item-link {
+        color: #000;
+        /* transition: coloreee 0.6s cubic-bezier(.31,.85,.11,.99); */
     }
 
     .header {
+        z-index: 10;
         position: absolute;
         top: 0;
         left: 0;
@@ -30,40 +40,63 @@
         top: 37px;
     }
 
+    .main {
+        margin-top: 122px;
+    }
+
+    .textblock-area {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    .black-textblock {
+        width: 100%;
+        height: auto;
+        padding: 48px;
+        margin-top: 32px;
+    }
+
+    .black-textblock:first-child {
+        margin-top: 0;
+    }
+
+    #contact-us {
+        margin-top: 32px;
+    }
      /* burger */
 
      .burger-icon {
-         display: flex;
-         position: absolute;
-         right: 0;
-         top: 45px;
-         width: 48px;
-         height: 31px;
-         border: none;
-         background: none;
-         flex-direction: column;
-         justify-content: space-between;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        width: 48px;
+        height: 31px;
+        border: none;
+        background: none;
+        flex-direction: column;
+        justify-content: space-between;
      }
 
      .burger-icon-inner,
      .burger-icon::before,
      .burger-icon::after {
-         content: "";
-         display: block;
-         width: 48px;
-         height: 5px;
-         background: #000;
-         transition: all 0.6s cubic-bezier(.31,.85,.11,.99);
+        content: "";
+        display: block;
+        width: 48px;
+        height: 5px;
+        background: #000;
+        transition: all 0.6s cubic-bezier(.31,.85,.11,.99);
     }
 
      /* Menu open */
 
      .menu-open.header {
-         background: #000;
+        background: #000;
      }
 
      .menu-open .header-logo path {
-         fill: #fff;     
+        fill: #fff;     
     }
 
     .menu-open .burger-icon-inner,
@@ -72,6 +105,11 @@
         background: #fff;
     }
 
+    .menu-open .nav {
+        display: flex;
+    }
 
-
+    .menu-open .nav-item-link {
+        color: #fff;
+    }
  }

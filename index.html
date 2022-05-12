@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
@@ -33,7 +34,7 @@
           </button>
         </div>
       </header>
-      <main>
+      <main class="main">
         <div class="slider">
           <div class="img-frame">
             <picture>
@@ -61,12 +62,27 @@
           Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi id tempor eros. Donec viverra tempor congue. Suspendisse quis felis ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu ornare nisl malesuada tincidunt. Nullam ac leo est. Donec varius neque vel ex consectetur aliquet. Aliquam venenatis vel tellus non tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non feugiat massa.
         </p>
         <h2 class="dividing-heading">history</h2>
-        <h2 class="dividing-heading">contact us</h2>
+        <div class="textblock-area">
+          <div class="black-textblock">
+            <p class="inner-text"><span class="counter">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p>
+          </div>
+          <div class="black-textblock">
+            <p class="inner-text"><span class="counter">1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra ac posuere nec, vehicula non lorem.</p>
+          </div>
+        </div>
+        <h2 class="dividing-heading" id="contact-us">contact us</h2>
+        <form action="_blank" class="send-message-form">
+          <input type="text" id="user-entered" placeholder="type your message here" class="user-message">
+          <input type="button" value="send" class="submit-btn">
+          <!-- type="submit" -->
+        </form>
       </main>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
   </body>
 </html>

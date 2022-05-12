@@ -10,7 +10,7 @@ $(document).ready(function(){
         arrows: false,
         easing: 'ease-out',
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 4000,
         speed: 700
     });
-  });
+});
