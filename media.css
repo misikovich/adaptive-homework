@@ -150,5 +150,14 @@
 .menu-open .nav-item-link {
     color: #fff;
 }
+
+/* submit btn */
+.submit-btn:hover {
+    background: #000;
+}
+
+.submit-btn:active {
+    background: linear-gradient(135deg, #2afeb7, #08c792);
+}
 }
 
