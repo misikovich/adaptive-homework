@@ -11,6 +11,6 @@ $(document).ready(function(){
         easing: 'ease-out',
         autoplay: true,
         autoplaySpeed: 4000,
-        speed: 700
+        speed: 700,
     });
 });
