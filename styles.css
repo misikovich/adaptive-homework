@@ -15,6 +15,10 @@ body {
     align-items: center;
 }
 
+.burger-outer {
+    display: none;
+}
+
 .burger-icon {
     display: none;
 }
