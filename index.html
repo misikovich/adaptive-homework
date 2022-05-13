@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="zeroing.css">
+    <title>Adaptive gallery by misikovich</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="container">
+      <header id="header" class="header">
+        <div class="header-inner">
+          <a href="index.html" class="header-logo">
+            <svg width="80" height="48" viewBox="0 0 80 48" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.51473 0.568706H0V25.4496H19.9158V18.9451H8.51473V0.568706ZM28.784 24.7939C28.4611 24.6567 28.1439 24.508 27.8324 24.3478C25.6677 23.2341 23.9719 21.6938 22.7452 19.727C21.5185 17.7365 20.9052 15.4973 20.9052 13.0092C20.9052 10.5211 21.5185 8.29364 22.7452 6.32686C23.9719 4.33639 25.6677 2.78429 27.8324 1.67058C29.9972 0.556859 32.4386 0 35.1565 0C37.8745 0 40.3159 0.556859 42.4806 1.67058C44.6454 2.78429 46.3411 4.33639 47.5678 6.32686C48.7945 8.29364 49.4079 10.5211 49.4079 13.0092C49.4079 15.4973 48.7945 17.7365 47.5678 19.727C46.7408 21.053 45.7006 22.1851 44.4472 23.1233C44.5301 23.1567 44.6125 23.1908 44.6944 23.2257C46.6667 24.0314 48.3023 25.2162 49.6012 26.7801L44.1532 31.5075C42.5657 29.6829 40.6775 28.7706 38.4887 28.7706C36.6126 28.7706 35.1213 29.3275 34.0149 30.4412C32.9084 31.5549 32.3552 33.0714 32.3552 34.9908C32.3552 36.8628 32.8964 38.3675 33.9788 39.5049C35.0852 40.6424 36.5524 41.2111 38.3805 41.2111C39.4628 41.2111 40.4971 41.0096 41.4833 40.6068V34.3155H48.8796V44.8366C47.3883 45.8555 45.6565 46.6375 43.6841 47.1825C41.7118 47.7275 39.7755 48 37.8754 48C35.1814 48 32.7641 47.455 30.6234 46.365C28.4827 45.2512 26.799 43.711 25.5723 41.7442C24.3696 39.7537 23.7683 37.5026 23.7683 34.9908C23.7683 32.479 24.3696 30.2398 25.5723 28.273C26.4193 26.8987 27.4898 25.739 28.784 24.7939ZM38.0068 18.483C37.1649 18.9806 36.2149 19.2294 35.1565 19.2294C34.0982 19.2294 33.1361 18.9806 32.2702 18.483C31.4283 17.9617 30.7548 17.2389 30.2497 16.3148C29.7446 15.3669 29.4921 14.2651 29.4921 13.0092C29.4921 11.7533 29.7446 10.6633 30.2497 9.73911C30.7548 8.79126 31.4283 8.06853 32.2702 7.57091C33.1361 7.0496 34.0982 6.78894 35.1565 6.78894C36.2149 6.78894 37.1649 7.0496 38.0068 7.57091C38.8727 8.06853 39.5582 8.79126 40.0633 9.73911C40.5684 10.6633 40.821 11.7533 40.821 13.0092C40.821 14.2651 40.5684 15.3669 40.0633 16.3148C39.5582 17.2389 38.8727 17.9617 38.0068 18.483ZM58.4245 46.3294C60.5893 47.4431 63.0307 48 65.7486 48C68.4666 48 70.908 47.4431 73.0728 46.3294C75.2375 45.2157 76.9333 43.6755 78.16 41.7087C79.3867 39.7182 80 37.4789 80 34.9908C80 32.5027 79.3867 30.2753 78.16 28.3085C76.9333 26.318 75.2375 24.766 73.0728 23.6522C70.908 22.5385 68.4666 21.9817 65.7486 21.9817C63.0307 21.9817 60.5893 22.5385 58.4245 23.6522C56.2598 24.766 54.564 26.318 53.3373 28.3085C52.1106 30.2753 51.4973 32.5027 51.4973 34.9908C51.4973 37.4789 52.1106 39.7182 53.3373 41.7087C54.564 43.6755 56.2598 45.2157 58.4245 46.3294ZM68.5989 40.4646C67.7571 40.9623 66.807 41.2111 65.7486 41.2111C64.6903 41.2111 63.7282 40.9623 62.8623 40.4646C62.0204 39.9433 61.347 39.2206 60.8418 38.2964C60.3367 37.3486 60.0842 36.2467 60.0842 34.9908C60.0842 33.7349 60.3367 32.6449 60.8418 31.7208C61.347 30.7729 62.0204 30.0502 62.8623 29.5526C63.7282 29.0313 64.6903 28.7706 65.7486 28.7706C66.807 28.7706 67.7571 29.0313 68.5989 29.5526C69.4648 30.0502 70.1503 30.7729 70.6554 31.7208C71.1606 32.6449 71.4131 33.7349 71.4131 34.9908C71.4131 36.2467 71.1606 37.3486 70.6554 38.2964C70.1503 39.2206 69.4648 39.9433 68.5989 40.4646Z" fill="black"/>
+            </svg>              
+          </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#" class="nav-item-link">gallery</a></li>
+              <li class="nav-item"><a href="#" class="nav-item-link">history</a></li>
+              <li class="nav-item"><a href="#" class="nav-item-link">contact us</a></li>
+            </ul>
+          </nav>
+          <div class="burger-outer">
+            <button id="burger-icon" class="burger-icon no-select">
+              <span class="burger-icon-inner"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider">
+          <div class="img-frame">
+            <picture>
+              <source srcset="img/camera-bw-mobile.png" alt="Camera" media="(max-width: 375px)">
+              <source srcset="img/camera-bw-tablet.png" alt="Camera" media="(max-width: 1024px)">
+              <img src="img/camera-bw-desktop.jpg" alt="Camera">
+            </picture>
+          </div>
+          <div class="img-frame">
+            <picture>
+              <source srcset="img/camera-bw-mobile.png" alt="Camera" media="(max-width: 375px)">
+              <source srcset="img/camera-bw-tablet.png" alt="Camera" media="(max-width: 1024px)">
+              <img src="img/camera-bw-desktop.jpg" alt="Camera">
+            </picture>
+          </div>
+          <div class="img-frame">
+            <picture>
+              <source srcset="img/camera-bw-mobile.png" alt="Camera" media="(max-width: 375px)">
+              <source srcset="img/camera-bw-tablet.png" alt="Camera" media="(max-width: 1024px)">
+              <img src="img/camera-bw-desktop.jpg" alt="Camera">
+            </picture>
+          </div>
+        </div>
+        <p class="text-article">
+          Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi id tempor eros. Donec viverra tempor congue. Suspendisse quis felis ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu ornare nisl malesuada tincidunt. Nullam ac leo est. Donec varius neque vel ex consectetur aliquet. Aliquam venenatis vel tellus non tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non feugiat massa.
+        </p>
+        <h2 class="dividing-heading">history</h2>
+        <div class="textblock-area">
+          <div class="black-textblock">
+            <p class="inner-text"><span class="counter">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p>
+          </div>
+          <div class="black-textblock">
+            <p class="inner-text"><span class="counter">1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra ac posuere nec, vehicula non lorem.</p>
+          </div>
+        </div>
+        <h2 class="dividing-heading" id="contact-us">contact us</h2>
+        <form action="_blank" class="send-message-form">
+          <div class="text-outer">
+            <input type="text" id="user-entered" placeholder="type your message here" class="user-message">
+          </div>
+          <input type="button" value="send" class="submit-btn">
+          <!-- type="submit" -->
+        </form>
+      </main>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
   </body>
 </html>
