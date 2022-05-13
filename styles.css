@@ -1,5 +1,13 @@
 body {
     font-family: "Montserrat";
+    animation: fadeInGlobal ease-out 1.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInGlobal {
+    0% { opacity: 0; filter: blur(10px) }
+    100% { opacity: 1; filter: blur(0)}
 }
 
 #container {
