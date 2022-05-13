@@ -72,6 +72,7 @@
 /* burger */
 
 .burger-outer {
+    display: block;
     position: absolute;
     right: 0;
     top: 45px;
