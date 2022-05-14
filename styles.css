@@ -1,8 +1,8 @@
 body {
     font-family: "Montserrat";
-    animation: fadeInGlobal ease-out 1.7s;
+    /* animation: fadeInGlobal ease-out 1.7s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInGlobal {
