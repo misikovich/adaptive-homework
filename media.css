@@ -167,11 +167,13 @@
 
 /* submit btn */
 .submit-btn:hover {
+    transform: none;
     background: #000;
 }
 
 .submit-btn:active {
     background: linear-gradient(135deg, #2afeb7, #08c792);
+    transform: scale(0.95);
 }
 }
 
